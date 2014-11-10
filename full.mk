@@ -22,13 +22,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Stock Apps
 PRODUCT_PACKAGES += \
-    OmaDmclient \
     qcrilmsgtunnel \
-    SprintHiddenMenu \
     shutdownlistener \
-    TimeService \
-    UpdateSetting
+    TimeService
 
-$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage12.mk)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf:lge
+
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
 
 $(call inherit-product, $(LOCAL_PATH)/device-hammerhead.mk)
