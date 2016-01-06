@@ -20,7 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.est_max_time=600 \
     ro.facelock.use_intro_anim=false \
     ro.build.expect.bootloader=HHZ12k \
-    ro.build.expect.baseband=M8974A-2.0.50.2.27
+    ro.build.expect.baseband=M8974A-2.0.50.2.28
 
 # Stock Apps
 PRODUCT_PACKAGES += \
